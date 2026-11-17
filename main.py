@@ -25,11 +25,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-
 @app.get("/")
 def home():
     return {
-        "message": "Inventory Service is running"
+        "message": "Inventory Service is running",
+        "version": "1.1"
     }
 
 
